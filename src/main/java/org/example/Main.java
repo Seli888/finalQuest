@@ -1,20 +1,17 @@
 package org.example;
-import java.io.FileNotFoundException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.io.IOException;
+import java.util.Scanner;
+
 
 public class Main {
     public static void main(String[] args) {
+        var in = new Scanner(System.in);
+        var operand1 = in.nextDouble();
+        var operator = in.next();
+        var operand2 = in.nextDouble();
 
-        String filePath = "C:\\Users\\django\\Desktop\\go.txt";
+        var f = new Facade();
+        var res = f.calculate(operand1, operand2, operator);
+        System.out.println(res);
 
-        try{ String text = new String(Files.readAllBytes(Paths.get(filePath)));
-                System.out.println(text);
-        } catch (IOException e){
-                System.out.println("файл не найден");
-        } finally{
-                System.out.println("Работа с файлом завершена");
-        }
     }
 }
