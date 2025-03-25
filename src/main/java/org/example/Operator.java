@@ -3,7 +3,7 @@ package org.example;
 public enum Operator {
     PLUS("+"),
     MINUS("-"),
-    TIMES("*"),
+    MULTIPLY("*"),
     DIVISION_SIGN("/");
 
 

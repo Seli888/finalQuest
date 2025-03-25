@@ -22,7 +22,7 @@ public class Facade {
         return switch (operator) {
             case PLUS -> new PlusCalculation();
             case MINUS -> new MinusCalculation();
-            case TIMES -> new TimesCalculation();
+            case MULTIPLY -> new MultiplyCalculation();
             case DIVISION_SIGN -> new DivisionSignCalculation(); };
     }
 }
